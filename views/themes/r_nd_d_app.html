@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="aui">
+	<head>
+	{{>header this.headerData}}
+	{{>cssInclude this.cssList}}
+	</head>
+	<body>
+		<!--[if IE]>
+			<div class="unsupported-browser"><h1>Browser not supported please upgrade</h1></div>
+		<![endif]-->
+
+		<!--[if !IE]> -->
+		<div class="layout-header">
+			<div class="container-fluid">
+				<div class="row header-main">
+					<div class="menu-box">
+						<a href="#" class="menu-icon toggle-icon" id="main-menu-icon" tabindex="0" data-toggle="menu-list-box" aria-label="Open Main Menu">
+							<span class="line first-line"></span>
+							<span class="line second-line"></span>
+							<span class="line third-line"></span>
+						</a>
+						<div class="menu-list-box toggle-box">
+							<ul class="menu-list">
+								<li class="active"><a href="/">Home</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="site-logo">
+						<a href="#" tabindex="-1">Covid19-Analysis Dashboard</a>
+					</div>
+
+					<div class="header-right">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">    
+  			<div class="row content">
+				  {{{body}}}
+			</div>
+		</div>
+		<footer class="container-fluid text-center">
+			<ul class="footer-links">
+				<li><a href="#" class="contact-us-link" id="contact-us-btn-link" tabindex="0" aria-label="Open Contact Us Form">Contact Us</a></li>
+				<li><a href="https://enquiryrailway.in/aboutus" target="_blank" tabindex="0" aria-label="About Us">About Us</a></li>
+			</ul>
+
+			<ul class="social-links">
+				<li><a href="#" title="Find us on GitHub" tabindex="-1"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				<li><a href="#" title="Find us on JSFiddle" tabindex="-1"><i class="fa fa-jsfiddle" aria-hidden="true"></i></a></li>
+				<li><a href="#" title="Connect wit us" tabindex="-1"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="#" title="Read us on Medium" tabindex="-1"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+				<li><a href="#" title="Meet with professionals" tabindex="-1"><i class="fa fa-meetup" aria-hidden="true"></i></a></li>
+				<li><a href="#" title="Play With us on StackOverFlow" tabindex="-1"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+			</ul>
+		</footer>
+		<div class="page-bg"></div>
+		<div class="page-loader">
+			<div class="loader-bg"></div>
+			<span class="loader">
+			</span>
+		</div>
+		<div class="custom-model">
+			<div class="contact-us-box">
+				<a href="#" class="close-contact-form" tabindex="0" id="close-contact-btn" backwordjumpbyid="contact-form-submitbtn">
+					<i class="fa fa-close" aria-hidden="true"></i>
+				</a>
+				<form action="#">
+					<ul class="contact-form-list">
+						<li>
+							<div class="contact-field-ind">
+								<label>Name</label>
+								<input type="text" placeholder="Enter Your Name" tabindex="0" id="contactnameinput">
+							</div>
+							<div class="contact-field-ind">
+								<label>Email</label>
+								<input type="email" placeholder="Enter Your Email" tabindex="0" >
+							</div>
+							<div class="contact-field-ind">
+								<label>Mobile No</label>
+								<input type="text" placeholder="Enter Your Mobile no" tabindex="0">
+							</div>
+							<div class="contact-field-ind">
+								<label>Message</label>
+								<textarea cols="5" rows="3" placeholder="Enter Message" tabindex="0"></textarea>
+							</div>
+							<div class="contact-field-ind contact-field-control">
+								<input type="reset" value="Reset" tabindex="0">
+								<input type="Submit" value="Submit" tabindex="0" forwordjumpbyid="close-contact-btn" id="contact-form-submitbtn">
+							</div>
+							
+						</li>
+					</ul>
+				</form>
+				
+			</div>
+		</div>
+		{{>jsInclude this.jsList}}
+		<!-- <![endif]-->
+
+	</body>
+</html>

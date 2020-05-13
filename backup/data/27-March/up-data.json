@@ -1,0 +1,981 @@
+{
+    "_id": {
+        "$oid": "5eac7ebc7c213e5d2fa5e7a3"
+    },
+    "stateName": "Uttar Pradesh",
+    "stateCode": "up",
+    "datesS": [
+        {
+            "total": 50,
+            "totalRecovered": 14,
+            "totalDeaths": 0,
+            "totalActive": 36,
+            "newCaseCount": 0,
+            "newRecoveredCount": 0,
+            "newDeathsCount": 0,
+            "date": "20200327"
+        }
+    ],
+    "cities": [
+        {
+            "cityName": "Agra",
+            "cityCode": "agra",
+            "datesC": [
+                {
+                    "total": 10,
+                    "totalRecovered": 7,
+                    "totalDeaths": 0,
+                    "totalActive": 3,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Aligarh",
+            "cityCode": "aligarh",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Amroha",
+            "cityCode": "amroha",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Auraiya",
+            "cityCode": "auraiya",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Ayodhya",
+            "cityCode": "ayodhya",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Azamgarh",
+            "cityCode": "azamgarh",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Badaun",
+            "cityCode": "badaun",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Baghpat",
+            "cityCode": "baghpat",
+            "datesC": [
+                {
+                    "total": 1,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 1,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Bahraich",
+            "cityCode": "bahraich",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Balrampur",
+            "cityCode": "balrampur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Banda",
+            "cityCode": "banda",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Bara Banki",
+            "cityCode": "baraBanki",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Bareilly",
+            "cityCode": "bareilly",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Basti",
+            "cityCode": "basti",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Bhadohi",
+            "cityCode": "bhadohi",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Bijnore",
+            "cityCode": "bijnore",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Bulandshahr",
+            "cityCode": "bulandshahr",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Etah",
+            "cityCode": "etah",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Etawah",
+            "cityCode": "etawah",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Firozabad",
+            "cityCode": "firozabad",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Gautam Buddha Nagar",
+            "cityCode": "gautamBuddhaNagar",
+            "datesC": [
+                {
+                    "total": 18,
+                    "totalRecovered": 4,
+                    "totalDeaths": 0,
+                    "totalActive": 14,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Ghaziabad",
+            "cityCode": "ghaziabad",
+            "datesC": [
+                {
+                    "total": 5,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 5,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Ghazipur",
+            "cityCode": "ghazipur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Gonda",
+            "cityCode": "gonda",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Gorakhpur",
+            "cityCode": "gorakhpur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Hapur",
+            "cityCode": "hapur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Hardoi",
+            "cityCode": "hardoi",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Hathras",
+            "cityCode": "hathras",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Jalaun",
+            "cityCode": "jalaun",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Jaunpur",
+            "cityCode": "jaunpur",
+            "datesC": [
+                {
+                    "total": 1,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 1,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Jhansi",
+            "cityCode": "jhansi",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Kannauj",
+            "cityCode": "kannauj",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Kanpur Nagar",
+            "cityCode": "kanpurNagar",
+            "datesC": [
+                {
+                    "total": 1,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 1,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Kasganj",
+            "cityCode": "kasganj",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Kaushambi",
+            "cityCode": "kaushambi",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Lakhimpur",
+            "cityCode": "lakhimpur",
+            "datesC": [
+                {
+                    "total": 1,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 1,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Lucknow",
+            "cityCode": "lucknow",
+            "datesC": [
+                {
+                    "total": 8,
+                    "totalRecovered": 1,
+                    "totalDeaths": 0,
+                    "totalActive": 7,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Maharajganj",
+            "cityCode": "maharajganj",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Mainpuri",
+            "cityCode": "mainpuri",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Mathura",
+            "cityCode": "mathura",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Mau",
+            "cityCode": "mau",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Meerut",
+            "cityCode": "meerut",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Mirzapur",
+            "cityCode": "mirzapur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Moradabad",
+            "cityCode": "moradabad",
+            "datesC": [
+                {
+                    "total": 1,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 1,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Muzaffar Nagar",
+            "cityCode": "muzaffarNagar",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Pilibhit",
+            "cityCode": "pilibhit",
+            "datesC": [
+                {
+                    "total": 2,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 2,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Pratapgarh",
+            "cityCode": "pratapgarh",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Prayagraj",
+            "cityCode": "prayagraj",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Rae Bareli",
+            "cityCode": "raeBareli",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Rampur",
+            "cityCode": "rampur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Saharanpur",
+            "cityCode": "saharanpur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Sambhal",
+            "cityCode": "sambhal",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Sant Kabir Nagar",
+            "cityCode": "santKabirNagar",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Shahjahanpur",
+            "cityCode": "shahjahanpur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Shamli",
+            "cityCode": "shamli",
+            "datesC": [
+                {
+                    "total": 1,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 1,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Sitapur",
+            "cityCode": "sitapur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Srawasti",
+            "cityCode": "srawasti",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Sultanpur",
+            "cityCode": "sultanpur",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Unnao",
+            "cityCode": "unnao",
+            "datesC": [
+                {
+                    "total": 0,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 0,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        },
+        {
+            "cityName": "Varanasi",
+            "cityCode": "varanasi",
+            "datesC": [
+                {
+                    "total": 1,
+                    "totalRecovered": 0,
+                    "totalDeaths": 0,
+                    "totalActive": 1,
+                    "newCaseCount": 0,
+                    "newRecoveredCount": 0,
+                    "newDeathsCount": 0,
+                    "date": "20200327"
+                }
+            ]
+        }
+    ]
+}

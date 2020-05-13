@@ -1,0 +1,12 @@
+<script type ="text/javascript" src="/js/theme/jquery-3.2.0.min.js"></script>
+<script type ="text/javascript" src="/js/theme/bootstrap.min.js"></script>
+<script type ="text/javascript" src="/js/theme/handlebarsC.min.js"></script>
+<script type ="text/javascript" src="/js/theme/underscore.js"></script>
+<script type ="text/javascript" src="/js/theme/global-helper.js"></script>
+<script type ="text/javascript" src="/js/theme/theme.js"></script>
+
+{{#if this}}
+	{{#each this}}
+		<script type='text/javascript' src='{{this}}'></script>
+	{{/each}}
+{{/if}}

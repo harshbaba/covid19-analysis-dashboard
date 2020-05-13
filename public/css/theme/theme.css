@@ -1,0 +1,443 @@
+body {
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #777;
+  background: url("../../images/bg-image.jpg") no-repeat center fixed;
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100vh; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+p {
+  margin: 0; }
+
+a:hover, a:focus {
+  text-decoration: none; }
+
+a:focus {
+  outline: none; }
+
+h3, h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #111; }
+
+.page-title {
+  margin: 15px 0 20px; }
+  .page-title h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase; }
+
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  footer .footer-links {
+    float: left; }
+    footer .footer-links > li {
+      float: left;
+      padding: 0 15px;
+      border-right: 1px solid #fff; }
+      footer .footer-links > li:last-child {
+        border-right: 0; }
+      footer .footer-links > li > a {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff; }
+        footer .footer-links > li > a:hover, footer .footer-links > li > a:focus {
+          text-decoration: underline; }
+  footer .social-links {
+    float: right; }
+    footer .social-links > li {
+      float: left;
+      padding: 0 10px; }
+      footer .social-links > li > a {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        line-height: 24px; }
+
+.page-content-main {
+  display: block;
+  width: 100%;
+  min-height: 350px;
+  background: #fff;
+  padding: 30px;
+  float: left;
+  margin-top:25px; }
+
+.toggle-box {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s; }
+
+.toggle-box.active {
+  visibility: visible;
+  opacity: 1; }
+
+.page-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: none; }
+
+.page-bg.active {
+  display: block; }
+
+.page-loader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 999;
+  display: none; }
+
+.page-loader.active {
+  display: block; }
+
+.loader-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9; }
+
+.page-loader .loader {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 10; }
+
+.loader {
+  border: 5px solid #f3f3f3;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.custom-model {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 500px;
+  background: #fff;
+  width: 96%;
+  max-height: 520px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: none; }
+
+.custom-model.active {
+  display: block; }
+
+.layout-header {
+  float: left;
+  width: 100%;
+  background: #101010; }
+  .layout-header .header-main {
+    position: relative; }
+    .layout-header .header-main .menu-box {
+      float: left;
+      position: relative; }
+      .layout-header .header-main .menu-box > a.menu-icon {
+        display: block;
+        color: #fff;
+        font-size: 27px;
+        line-height: 40px;
+        width: 56px;
+        overflow: hidden;
+        margin-left: 5px;
+        padding: 14px 7px; }
+        .layout-header .header-main .menu-box > a.menu-icon .line {
+          margin: 0 0 10px 0;
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #fff;border:0; }
+          .layout-header .header-main .menu-box > a.menu-icon .line.third-line {
+            margin-bottom: 0; }
+        .layout-header .header-main .menu-box > a.menu-icon:focus, .layout-header .header-main .menu-box > a.menu-icon.active {
+          background: #fff; }
+          .layout-header .header-main .menu-box > a.menu-icon:focus .line, .layout-header .header-main .menu-box > a.menu-icon.active .line {
+            background: #000;
+            outline: none; }
+      .layout-header .header-main .menu-box .menu-list-box {
+        position: absolute;
+        top: 56px;
+        left: 0;
+        width: 250px;
+        background: #101010;
+        z-index: 99; }
+        .layout-header .header-main .menu-box .menu-list-box .menu-list {
+          float: left;
+          width: 100%; }
+          .layout-header .header-main .menu-box .menu-list-box .menu-list > li {
+            float: left;
+            width: 100%; }
+            .layout-header .header-main .menu-box .menu-list-box .menu-list > li a {
+              display: block;
+              color: #fff;
+              font-size: 15px;
+              line-height: 40px;
+              padding: 0 15px;
+              border-bottom: 1px solid #fff; }
+            .layout-header .header-main .menu-box .menu-list-box .menu-list > li:last-child a {
+              border-bottom: 0; }
+    .layout-header .header-main .site-logo {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      margin-left: -125px; }
+      .layout-header .header-main .site-logo > a {
+        color: #d5d5d5;
+        font-size: 20px;
+        line-height: 30px; }
+    .layout-header .header-main .header-right {
+      float: right;
+      padding-right: 5px;
+      position: relative; }
+      .layout-header .header-main .header-right .mini-cart-box,
+      .layout-header .header-main .header-right .user-account-box,
+      .layout-header .header-main .header-right .site-search-box {
+        float: left; }
+        .layout-header .header-main .header-right .mini-cart-box .cart-icon,
+        .layout-header .header-main .header-right .mini-cart-box .user-account-icon,
+        .layout-header .header-main .header-right .mini-cart-box .search-icon,
+        .layout-header .header-main .header-right .user-account-box .cart-icon,
+        .layout-header .header-main .header-right .user-account-box .user-account-icon,
+        .layout-header .header-main .header-right .user-account-box .search-icon,
+        .layout-header .header-main .header-right .site-search-box .cart-icon,
+        .layout-header .header-main .header-right .site-search-box .user-account-icon,
+        .layout-header .header-main .header-right .site-search-box .search-icon {
+          float: left;
+          padding: 12px 15px;
+          border-right: 1px solid #fff;
+          cursor: pointer; }
+          .layout-header .header-main .header-right .mini-cart-box .cart-icon i,
+          .layout-header .header-main .header-right .mini-cart-box .user-account-icon i,
+          .layout-header .header-main .header-right .mini-cart-box .search-icon i,
+          .layout-header .header-main .header-right .user-account-box .cart-icon i,
+          .layout-header .header-main .header-right .user-account-box .user-account-icon i,
+          .layout-header .header-main .header-right .user-account-box .search-icon i,
+          .layout-header .header-main .header-right .site-search-box .cart-icon i,
+          .layout-header .header-main .header-right .site-search-box .user-account-icon i,
+          .layout-header .header-main .header-right .site-search-box .search-icon i {
+            color: #fff;
+            font-size: 22px;
+            line-height: 30px; }
+          .layout-header .header-main .header-right .mini-cart-box .cart-icon:focus, .layout-header .header-main .header-right .mini-cart-box .cart-icon.active,
+          .layout-header .header-main .header-right .mini-cart-box .user-account-icon:focus,
+          .layout-header .header-main .header-right .mini-cart-box .user-account-icon.active,
+          .layout-header .header-main .header-right .mini-cart-box .search-icon:focus,
+          .layout-header .header-main .header-right .mini-cart-box .search-icon.active,
+          .layout-header .header-main .header-right .user-account-box .cart-icon:focus,
+          .layout-header .header-main .header-right .user-account-box .cart-icon.active,
+          .layout-header .header-main .header-right .user-account-box .user-account-icon:focus,
+          .layout-header .header-main .header-right .user-account-box .user-account-icon.active,
+          .layout-header .header-main .header-right .user-account-box .search-icon:focus,
+          .layout-header .header-main .header-right .user-account-box .search-icon.active,
+          .layout-header .header-main .header-right .site-search-box .cart-icon:focus,
+          .layout-header .header-main .header-right .site-search-box .cart-icon.active,
+          .layout-header .header-main .header-right .site-search-box .user-account-icon:focus,
+          .layout-header .header-main .header-right .site-search-box .user-account-icon.active,
+          .layout-header .header-main .header-right .site-search-box .search-icon:focus,
+          .layout-header .header-main .header-right .site-search-box .search-icon.active {
+            background: #fff;
+            outline: none; }
+            .layout-header .header-main .header-right .mini-cart-box .cart-icon:focus i, .layout-header .header-main .header-right .mini-cart-box .cart-icon.active i,
+            .layout-header .header-main .header-right .mini-cart-box .user-account-icon:focus i,
+            .layout-header .header-main .header-right .mini-cart-box .user-account-icon.active i,
+            .layout-header .header-main .header-right .mini-cart-box .search-icon:focus i,
+            .layout-header .header-main .header-right .mini-cart-box .search-icon.active i,
+            .layout-header .header-main .header-right .user-account-box .cart-icon:focus i,
+            .layout-header .header-main .header-right .user-account-box .cart-icon.active i,
+            .layout-header .header-main .header-right .user-account-box .user-account-icon:focus i,
+            .layout-header .header-main .header-right .user-account-box .user-account-icon.active i,
+            .layout-header .header-main .header-right .user-account-box .search-icon:focus i,
+            .layout-header .header-main .header-right .user-account-box .search-icon.active i,
+            .layout-header .header-main .header-right .site-search-box .cart-icon:focus i,
+            .layout-header .header-main .header-right .site-search-box .cart-icon.active i,
+            .layout-header .header-main .header-right .site-search-box .user-account-icon:focus i,
+            .layout-header .header-main .header-right .site-search-box .user-account-icon.active i,
+            .layout-header .header-main .header-right .site-search-box .search-icon:focus i,
+            .layout-header .header-main .header-right .site-search-box .search-icon.active i {
+              color: #000; }
+        .layout-header .header-main .header-right .mini-cart-box .user-account-icon,
+        .layout-header .header-main .header-right .user-account-box .user-account-icon,
+        .layout-header .header-main .header-right .site-search-box .user-account-icon {
+          border-right: 0; }
+        .layout-header .header-main .header-right .mini-cart-box .cart-list-box,
+        .layout-header .header-main .header-right .mini-cart-box .user-account,
+        .layout-header .header-main .header-right .mini-cart-box .search-box,
+        .layout-header .header-main .header-right .user-account-box .cart-list-box,
+        .layout-header .header-main .header-right .user-account-box .user-account,
+        .layout-header .header-main .header-right .user-account-box .search-box,
+        .layout-header .header-main .header-right .site-search-box .cart-list-box,
+        .layout-header .header-main .header-right .site-search-box .user-account,
+        .layout-header .header-main .header-right .site-search-box .search-box {
+          position: absolute;
+          top: 56px;
+          right: 0;
+          width: 350px;
+          background: #fff;
+          height: 250px;
+          z-index: 99;
+          box-sizing: border-box;
+          padding: 15px;
+          border: 1px solid #000; }
+          .layout-header .header-main .header-right .mini-cart-box .cart-list-box .user-account-header,
+          .layout-header .header-main .header-right .mini-cart-box .cart-list-box .cart-list-header,
+          .layout-header .header-main .header-right .mini-cart-box .cart-list-box .search-box-header,
+          .layout-header .header-main .header-right .mini-cart-box .user-account .user-account-header,
+          .layout-header .header-main .header-right .mini-cart-box .user-account .cart-list-header,
+          .layout-header .header-main .header-right .mini-cart-box .user-account .search-box-header,
+          .layout-header .header-main .header-right .mini-cart-box .search-box .user-account-header,
+          .layout-header .header-main .header-right .mini-cart-box .search-box .cart-list-header,
+          .layout-header .header-main .header-right .mini-cart-box .search-box .search-box-header,
+          .layout-header .header-main .header-right .user-account-box .cart-list-box .user-account-header,
+          .layout-header .header-main .header-right .user-account-box .cart-list-box .cart-list-header,
+          .layout-header .header-main .header-right .user-account-box .cart-list-box .search-box-header,
+          .layout-header .header-main .header-right .user-account-box .user-account .user-account-header,
+          .layout-header .header-main .header-right .user-account-box .user-account .cart-list-header,
+          .layout-header .header-main .header-right .user-account-box .user-account .search-box-header,
+          .layout-header .header-main .header-right .user-account-box .search-box .user-account-header,
+          .layout-header .header-main .header-right .user-account-box .search-box .cart-list-header,
+          .layout-header .header-main .header-right .user-account-box .search-box .search-box-header,
+          .layout-header .header-main .header-right .site-search-box .cart-list-box .user-account-header,
+          .layout-header .header-main .header-right .site-search-box .cart-list-box .cart-list-header,
+          .layout-header .header-main .header-right .site-search-box .cart-list-box .search-box-header,
+          .layout-header .header-main .header-right .site-search-box .user-account .user-account-header,
+          .layout-header .header-main .header-right .site-search-box .user-account .cart-list-header,
+          .layout-header .header-main .header-right .site-search-box .user-account .search-box-header,
+          .layout-header .header-main .header-right .site-search-box .search-box .user-account-header,
+          .layout-header .header-main .header-right .site-search-box .search-box .cart-list-header,
+          .layout-header .header-main .header-right .site-search-box .search-box .search-box-header {
+            float: left;
+            width: 100%; }
+            .layout-header .header-main .header-right .mini-cart-box .cart-list-box .user-account-header h3,
+            .layout-header .header-main .header-right .mini-cart-box .cart-list-box .cart-list-header h3,
+            .layout-header .header-main .header-right .mini-cart-box .cart-list-box .search-box-header h3,
+            .layout-header .header-main .header-right .mini-cart-box .user-account .user-account-header h3,
+            .layout-header .header-main .header-right .mini-cart-box .user-account .cart-list-header h3,
+            .layout-header .header-main .header-right .mini-cart-box .user-account .search-box-header h3,
+            .layout-header .header-main .header-right .mini-cart-box .search-box .user-account-header h3,
+            .layout-header .header-main .header-right .mini-cart-box .search-box .cart-list-header h3,
+            .layout-header .header-main .header-right .mini-cart-box .search-box .search-box-header h3,
+            .layout-header .header-main .header-right .user-account-box .cart-list-box .user-account-header h3,
+            .layout-header .header-main .header-right .user-account-box .cart-list-box .cart-list-header h3,
+            .layout-header .header-main .header-right .user-account-box .cart-list-box .search-box-header h3,
+            .layout-header .header-main .header-right .user-account-box .user-account .user-account-header h3,
+            .layout-header .header-main .header-right .user-account-box .user-account .cart-list-header h3,
+            .layout-header .header-main .header-right .user-account-box .user-account .search-box-header h3,
+            .layout-header .header-main .header-right .user-account-box .search-box .user-account-header h3,
+            .layout-header .header-main .header-right .user-account-box .search-box .cart-list-header h3,
+            .layout-header .header-main .header-right .user-account-box .search-box .search-box-header h3,
+            .layout-header .header-main .header-right .site-search-box .cart-list-box .user-account-header h3,
+            .layout-header .header-main .header-right .site-search-box .cart-list-box .cart-list-header h3,
+            .layout-header .header-main .header-right .site-search-box .cart-list-box .search-box-header h3,
+            .layout-header .header-main .header-right .site-search-box .user-account .user-account-header h3,
+            .layout-header .header-main .header-right .site-search-box .user-account .cart-list-header h3,
+            .layout-header .header-main .header-right .site-search-box .user-account .search-box-header h3,
+            .layout-header .header-main .header-right .site-search-box .search-box .user-account-header h3,
+            .layout-header .header-main .header-right .site-search-box .search-box .cart-list-header h3,
+            .layout-header .header-main .header-right .site-search-box .search-box .search-box-header h3 {
+              font-size: 20px;
+              text-align: center; }
+        .layout-header .header-main .header-right .mini-cart-box .cart-list-box,
+        .layout-header .header-main .header-right .user-account-box .cart-list-box,
+        .layout-header .header-main .header-right .site-search-box .cart-list-box {
+          right: 55px; }
+        .layout-header .header-main .header-right .mini-cart-box .user-account,
+        .layout-header .header-main .header-right .user-account-box .user-account,
+        .layout-header .header-main .header-right .site-search-box .user-account {
+          right: 2px; }
+        .layout-header .header-main .header-right .mini-cart-box .search-box,
+        .layout-header .header-main .header-right .user-account-box .search-box,
+        .layout-header .header-main .header-right .site-search-box .search-box {
+          right: 111px; }
+
+.contact-us-box {
+  float: left;
+  width: 100%;
+  position: relative; }
+  .contact-us-box .contact-form-list {
+    float: left;
+    width: 100%; }
+    .contact-us-box .contact-form-list > li {
+      float: left;
+      width: 100%; }
+      .contact-us-box .contact-form-list > li .contact-field-ind {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px; }
+        .contact-us-box .contact-form-list > li .contact-field-ind > label {
+          display: block; }
+        .contact-us-box .contact-form-list > li .contact-field-ind input[type="text"],
+        .contact-us-box .contact-form-list > li .contact-field-ind input[type="email"],
+        .contact-us-box .contact-form-list > li .contact-field-ind textarea {
+          display: block;
+          width: 100%;
+          font-size: 16px;
+          padding: 7px 10px;
+          line-height: 30px;
+          color: #000;
+          border: 1px solid #2d2d30; }
+  .contact-us-box .close-contact-form {
+    position: absolute;
+    top: -15px;
+    right: -12px;
+    font-size: 25px;
+    line-height: 24px;
+    color: #222222;
+    width: 30px;
+    height: 30px;
+    text-align: center; }
+    .contact-us-box .close-contact-form:focus {
+      color: #fff;
+      background: #222222; }

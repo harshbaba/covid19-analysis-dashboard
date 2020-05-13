@@ -1,0 +1,149 @@
+<div class="col-sm-12">
+    <div class="page-content-main">
+        <h2>Upload Data By State &amp; Cities</h2>
+        <div style="display:none" id="page-data">{{pageData}}</div>
+        <div class="upload-form-placeholder">
+            <div class="upload-date-row">
+                <div class="upload-date-box">
+                    <label>Date (YYYYMMDD):</label>
+                    <input type="text" placeholder="Enter Date (YYYYMMDD)" id="upload-date-field" value="{{pageData.datesS.date}}"/>
+                </div>
+                <div class="update-state-box">
+                    <label>State:</label>
+                    <select name="stateCode" id="upload-state-dropdown">
+                        <option value="up" selected >Uttar Pradesh</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-heading">
+                <h3>State:</h3>
+            </div>
+            <div class="upload-state-data">
+                <div class="upload-state-inner">
+                    <div class="state-ind title">
+                        <div class="column">
+                            <h3>State Name</h3>
+                        </div>
+                        <div class="column">
+                            <h3>Total Case</h3>
+                        </div>
+                        <div class="column">
+                            <h3>Recovered</h3>
+                        </div>
+                        <div class="column">
+                            <h3>Death</h3>
+                        </div>
+                        <div class="column">
+                            <h3>Active Case</h3>
+                        </div>
+                        <div class="column">
+                            <h3>New Case</h3>
+                        </div>
+                        <div class="column">
+                            <h3>New Recovered</h3>
+                        </div>
+                        <div class="column">
+                            <h3>New Death</h3>
+                        </div>
+                    </div>
+                    <div class="state-ind content" data-stateCode="{{pageData.stateCode}}">
+                        <div class="column">
+                            <p>{{pageData.stateName}}</p>
+                        </div>
+                        <div class="column">
+                            <input type="text" name="total" targetInput="newCaseCount" currValue="{{#if pageData.datesS.total}}{{pageData.datesS.total}}{{else}}0{{/if}}" value="{{#if pageData.datesS.total}}{{pageData.datesS.total}}{{else}}0{{/if}}" />
+                        </div>
+                        <div class="column">
+                            <input type="text" name="totalRecovered" targetInput="newRecoveredCount" currValue="{{#if pageData.datesS.totalRecovered}}{{pageData.datesS.totalRecovered}}{{else}}0{{/if}}" value="{{#if pageData.datesS.totalRecovered}}{{pageData.datesS.totalRecovered}}{{else}}0{{/if}}" />
+                        </div>
+                        <div class="column">
+                            <input type="text" name="totalDeaths" targetInput="newDeathsCount" currValue="{{#if pageData.datesS.totalDeaths}}{{pageData.datesS.totalDeaths}}{{else}}0{{/if}}" value="{{#if pageData.datesS.totalDeaths}}{{pageData.datesS.totalDeaths}}{{else}}0{{/if}}" />
+                        </div>
+                        <div class="column">
+                            <input type="text" name="totalActive" value="{{#if pageData.datesS.totalActive}}{{pageData.datesS.totalActive}}{{else}}0{{/if}}" tabindex="-1" />
+                        </div>
+                        <div class="column">
+                            <input type="text" name="newCaseCount" value="0" tabindex="-1" readonly />
+                        </div>
+                        <div class="column">
+                            <input type="text" name="newRecoveredCount" value="0" tabindex="-1" readonly />
+                        </div>
+                        <div class="column">
+                            <input type="text" name="newDeathsCount" value="0" tabindex="-1" readonly />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-heading">
+                <h3>Cities</h3>
+            </div>
+            <div class="upload-cities-table">
+                <ul class="cities-list">
+                    <li class="title">
+                        <div class="city-ind">
+                            <div class="column">
+                                <h3>City Name</h3>
+                            </div>
+                            <div class="column">
+                                <h3>Total Case</h3>
+                            </div>
+                            <div class="column">
+                                <h3>Recovered</h3>
+                            </div>
+                            <div class="column">
+                                <h3>Death</h3>
+                            </div>
+                            <div class="column">
+                                <h3>Active Case</h3>
+                            </div>
+                            <div class="column">
+                                <h3>New Case</h3>
+                            </div>
+                            <div class="column">
+                                <h3>New Recovered</h3>
+                            </div>
+                            <div class="column">
+                                <h3>New Death</h3>
+                            </div>
+                        </div>
+                    </li>
+                    {{#each pageData.cities as |city| }}
+                    <li class="content">
+                        <div class="city-ind" data-cityCode="{{city.cityCode}}">
+                            <div class="column">
+                                <p>{{city.cityName}}</p>
+                            </div>
+                            <div class="column">
+                                <input type="text" name="total" targetInput="newCaseCount" currValue="{{#if city.datesC.total}}{{city.datesC.total}}{{else}}0{{/if}}" value="{{#if city.datesC.total}}{{city.datesC.total}}{{else}}0{{/if}}" />
+                            </div>
+                            <div class="column">
+                                <input type="text" name="totalRecovered" targetInput="newRecoveredCount" currValue="{{#if city.datesC.totalRecovered}}{{city.datesC.totalRecovered}}{{else}}0{{/if}}" value="{{#if city.datesC.totalRecovered}}{{city.datesC.totalRecovered}}{{else}}0{{/if}}" />
+                            </div>
+                            <div class="column">
+                                <input type="text" name="totalDeaths" targetInput="newDeathsCount" currValue="{{#if city.datesC.totalDeaths}}{{city.datesC.totalDeaths}}{{else}}0{{/if}}" value="{{#if city.datesC.totalDeaths}}{{city.datesC.totalDeaths}}{{else}}0{{/if}}" />
+                            </div>
+                            <div class="column">
+                                <input type="text" name="totalActive" value="{{#if city.datesC.totalActive}}{{city.datesC.totalActive}}{{else}}0{{/if}}" tabindex="-1" />
+                            </div>
+                            <div class="column">
+                                <input type="text" name="newCaseCount" value="0" tabindex="-1" readonly />
+                            </div>
+                            <div class="column">
+                                <input type="text" name="newRecoveredCount" value="0" tabindex="-1" readonly />
+                            </div>
+                            <div class="column">
+                                <input type="text" name="newDeathsCount" value="0" tabindex="-1" readonly />
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                    
+                </ul>
+            </div>
+
+            <div class="uplod-submit-box">
+                <input type="button" id="upload-form" value="Upload Form" />
+            </div>
+        </div>
+    </div>
+</div>
