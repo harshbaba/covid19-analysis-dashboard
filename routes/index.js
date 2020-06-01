@@ -38,26 +38,58 @@ router.get('/aboutus', function(req, res, next) {
 	});
 });
 
-router.get('/upload-data', function(req, res, next) {
+router.get('/upload-data-state-nd-city/:stateCode', function(req, res, next) {
 	//console.log(req.body);
-	State.findOne({stateCode: "up"},function(err, states){
+	State.findOne({stateCode: req.params.stateCode},function(err, states){
 		if(err){
 			res.json({success: false, message: err});
 		}else{
 			//console.log(states[1]);
-			res.render('../views/modules/upload-data/upload-data', {
+			res.render('../views/modules/upload-data-state-nd-city/upload-data-state-nd-city', {
 				title: 'R&D App',
 				headerData : {
-					title: 'upload-data',
+					title: 'upload-data-state-nd-city',
 				},
 				pageData:globalHelper.makeSingleDayDataForUploadData(states),
-				mainData:JSON.stringify({}),
+				//pageData:{},
+				mainData:JSON.stringify(states),
 				cssList : [
-					'modules/upload-data/upload-data'
+					'modules/upload-data-state-nd-city/upload-data-state-nd-city'
 				],
 				jsList : [
-					  '/js/models/ui-model.js',
-						'/js/modules/upload-data/upload-data.js'
+					  	'/js/models/myUpData.js',
+						'/js/modules/upload-data-state-nd-city/upload-data-state-nd-city.js'
+				],
+				layout:'../views/themes/r_nd_d_app.html'
+				});
+			//res.json({success: true, data: states});
+		}
+	});
+
+	
+});
+
+router.get('/edit-data-state-nd-city/:stateCode/:date', function(req, res, next) {
+	//console.log(req.body);
+	State.findOne({stateCode: req.params.stateCode},function(err, states){
+		if(err){
+			res.json({success: false, message: err});
+		}else{
+			//console.log(states[1]);
+			res.render('../views/modules/edit-data-state-nd-city/edit-data-state-nd-city', {
+				title: 'R&D App',
+				headerData : {
+					title: 'edit-data-state-nd-city',
+				},
+				pageData:globalHelper.makeSingleDayDataForEditData(states, req.params.date),
+				//pageData:{},
+				//mainData:JSON.stringify(states),
+				cssList : [
+					'modules/edit-data-state-nd-city/edit-data-state-nd-city'
+				],
+				jsList : [
+					  	'/js/models/myUpData.js',
+						'/js/modules/edit-data-state-nd-city/edit-data-state-nd-city.js'
 				],
 				layout:'../views/themes/r_nd_d_app.html'
 				});

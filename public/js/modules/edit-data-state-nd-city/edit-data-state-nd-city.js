@@ -54,6 +54,7 @@ $(document).ready(function(){
     function handleInputEntry(obj){
         //first calculate diff after updated value
         var diff = obj.value - obj.currValue;
+        if(diff < 0) diff = 0;
         obj.ele.closest('.content').find('input[name="'+obj.targetInput+'"]').val(diff);
         
         var totalCase = obj.ele.closest('.content').find('input[name="total"]').val();
@@ -72,7 +73,8 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST",
-            url: "../api/upload-state-nd-cities",
+            //url: "../api/upload-state-nd-cities",
+            url: "../../api/edit-state-nd-cities",
             data:  {test:JSON.stringify(formData)},
             cache: false,
             dataType: "JSON",
@@ -88,7 +90,7 @@ $(document).ready(function(){
     });
 
     //restrict to enter only 0-9 in inputs
-    $('input[name="total"], input[name="totalRecovered"], input[name="totalDeaths"]').keydown(function(event) {
+    /*$('input[name="total"], input[name="totalRecovered"], input[name="totalDeaths"]').keydown(function(event) {
         // Allow only backspace and delete
         if ( event.keyCode == 46 || event.keyCode == 8 ) {
             // let it happen, don't do anything
@@ -100,7 +102,7 @@ $(document).ready(function(){
             }   
         }
     });
-
+    */
     $('input[name="total"], input[name="totalRecovered"], input[name="totalDeaths"]').keyup(function(){
         //console.log($(this).val());
         var obj = {
@@ -114,4 +116,38 @@ $(document).ready(function(){
         handleInputEntry(obj);
     });
     
+    
 });
+
+
+/*
+var fillDate = "2020-04-24";
+var matchingDate = 424;
+
+var notfoundCity = [];
+$('.cities-list > li.content').each(function(){
+    var elem = $(this);
+    var cityName =  elem.find('.city-ind > .column:eq(0)').text().trim();
+    var cityDataArr = myUpData[cityName];
+    var notF = true;
+    var isDateExist = _.findIndex(cityDataArr, {date:fillDate});
+    if(isDateExist != -1){
+        var cityData = cityDataArr[isDateExist]
+        notF = false;
+        elem.find('input[name="total"]').val(cityData.confirmed);
+        elem.find('input[name="totalRecovered"]').val(cityData.recovered);
+        elem.find('input[name="totalDeaths"]').val(cityData.deceased);
+        elem.find('input[name="total"], input[name="totalRecovered"], input[name="totalDeaths"]').trigger('keyup');
+    }
+    if(notF){
+        var dateArr = myUpData[cityName][0].date.split('-');
+        var dateStr = dateArr[1]+dateArr[2];
+        dateStr = parseInt(dateStr);
+        if(dateStr <= matchingDate){
+            notfoundCity.push(cityName+' '+myUpData[cityName][0].date)
+        }
+    }
+});
+console.log(notfoundCity);
+
+*/

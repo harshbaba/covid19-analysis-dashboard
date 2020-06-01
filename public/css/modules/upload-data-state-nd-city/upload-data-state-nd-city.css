@@ -1,0 +1,172 @@
+.page-content-main > h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 0;
+}
+.upload-form-placeholder{
+    float: left;
+    width: 100%;
+}
+.upload-date-row{
+    float: left;
+    width: 100%;
+    margin: 20px 0 15px;
+}
+.upload-date-row label{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    display: block;
+}
+.upload-date-box{
+    float:left;
+    width:100%;
+    max-width:300px;  
+}
+
+.update-state-box{
+    float: right;
+}
+.update-state-box > select{
+    width:200px;
+    height: 36px;
+    border:1px solid #000;
+}
+
+.upload-date-box > input[type="text"]{
+    width:100%;
+    border:1px solid #000;
+    padding:5px;
+}
+
+.upload-cities-table{
+    float: left;
+    width: 100%;
+    /* margin-top: 25px; */
+    border: 1px solid #000;
+    position: relative;
+    padding-top: 31px;
+}
+li.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 17px;
+}
+.cities-list{
+    float: left;
+    width: 100%;
+    /* border:1px solid #000; */
+    max-height: 418px;
+    overflow: auto;
+}
+.cities-list > li{
+    float: left;
+    width: 100%;
+}
+.cities-list > li > .city-ind{
+    display: table;
+    width: 100%;
+}
+.cities-list > li.content > .city-ind{
+    border-top:1px solid #000;
+}
+
+.city-ind .column{
+    display: table-cell;
+    width:120px;
+    padding: 3px;
+    text-align: left;
+    box-sizing: border-box;
+    border-right:1px solid #000;
+}
+.city-ind .column > p{
+    font-weight: bold;
+    color: #000;
+}
+.city-ind .column:last-child{
+    border-right:0;
+}
+
+.city-ind .column > h3{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight:bold;
+}
+
+.city-ind .column input[type="text"]{
+    width:100%;
+    display: inline-block;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.uplod-submit-box{
+    float:left;
+    width:100%;
+    margin-top:20px;
+    text-align:center;
+}
+
+.row-heading{
+    float: left;
+    width:100%;
+    margin: 15px 0 8px;
+}
+.row-heading > h3{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.upload-state-data{
+    float: left;
+    width: 100%;
+}
+.upload-state-inner{
+    float: left;
+    width: 100%;
+    border:1px solid #000;
+}
+
+
+.upload-state-inner .state-ind{
+    display: table;
+    width: 100%;
+}
+.upload-state-inner .state-ind.title{
+    border-top: 0;
+}
+.upload-state-inner .state-ind{
+    border-top:1px solid #000;
+}
+
+.state-ind .column{
+    display: table-cell;
+    width:120px;
+    padding: 3px;
+    text-align: left;
+    box-sizing: border-box;
+    border-right:1px solid #000;
+}
+.state-ind .column > p{
+    font-weight: bold;
+    color: #000;
+}
+.state-ind .column:last-child{
+    border-right:0;
+}
+
+.state-ind .column > h3{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight:bold;
+}
+
+.state-ind .column input[type="text"]{
+    width:100%;
+    display: inline-block;
+    padding: 0 5px;
+    box-sizing: border-box;
+}

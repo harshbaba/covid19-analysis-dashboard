@@ -75,6 +75,72 @@ api.post('/upload-state-nd-cities',function(req, res){
 });
 
 
+api.post('/edit-state-nd-cities',function(req, res){
+    var formData = JSON.parse(req.body.test);
+    //console.log(formData);
+    //formData.stateCode
+    State.findOne({stateCode: formData.stateCode},function(err, states){
+		if(err){
+			res.send({success: false, message: err});
+		}else{
+            var savedStateData = states;
+            //check is DateExist in State
+            
+            var formUploadDate = formData.date;
+            var isDateExistInState = _.findIndex(savedStateData.datesS, {date:formUploadDate});
+            if(isDateExistInState != -1){
+                var citiesFormData = formData.citiesFormData;
+                
+                var savedCities = savedStateData.cities;
+
+                //start loop of citiesFormData
+                for(var i = 0; i< citiesFormData.length; i++){
+                    var indCity = citiesFormData[i];
+
+                    //find index of city in saved Data
+                    var savedCityIndex = _.findIndex(savedCities, {cityCode: indCity.cityCode});
+                    if(savedCityIndex != -1){
+                        var isDateExistInCity = _.findIndex(savedCities[savedCityIndex].datesC, {date:formUploadDate});
+                        savedCities[savedCityIndex].datesC[isDateExistInCity] = indCity.data;
+                    }
+                }
+
+                //add state data
+                savedStateData.datesS[isDateExistInState] = formData.stateData;
+                savedStateData.cities = savedCities;
+
+                //update in mongo
+                var query = { stateCode: formData.stateCode };
+                var options = { new: true };
+                var updateStateObj = {
+                    stateName       : savedStateData.stateName,
+                    stateCode       : savedStateData.stateCode,
+                    datesS         : savedStateData.datesS,
+                    cities        : savedStateData.cities
+                };
+                //res.json({success: true, message: "Data Saved Sucessfully", data: updateStateObj});
+                
+                State.findOneAndUpdate(query, {$set: updateStateObj}, options, function (err, doc) {
+                    if (err) {
+                        res.json({success: false, message:err});
+                    } else {
+                        res.json({success: true, message: "Data Saved Sucessfully", data: doc});
+                    }
+        
+                });
+                
+
+            }else{
+                res.send({success:false, message:"This Date is not present"});
+            }
+            
+        }
+    });
+    
+    
+});
+
+
 
 
 module.exports = api;
